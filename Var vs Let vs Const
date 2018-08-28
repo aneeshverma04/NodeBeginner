@@ -1,0 +1,31 @@
+PROBLEM WITH VAR
+
+var greeter = "hey hi";
+    var times = 4;
+
+    if (times > 3) {
+        var greeter = "say Hello instead"; 
+    }
+
+    console.log(greeter) //"say Hello instead"
+
+So, since times > 3 returns true, greeter is redefined to "say Hello instead". While this is not a problem if you knowingly want greeter to be redefined, it becomes a problem when you do not realize that a variable greeter has already been defined before. 
+If you have use greeter in other parts of your code, you might be surprised at the output you might get. This might cause a lot of bugs in your code. This is why the let and const is necessary.
+    
+
+LET
+let is preferred for variable declaration now. It's no surprise as it comes as an improvement to the var declarations. It also solves this problem that was raised in the last subheading.    
+
+let can be updated but not re-declared.
+ERROR
+
+CONST
+Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.
+
+const cannot be updated or re-declared
+
+
+var declarations are globally scoped or function scoped while let and const are block scoped.
+
+While var and let can be declared without being initialized, const must be initialized during declaration.
+
